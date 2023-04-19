@@ -1,0 +1,181 @@
+:root {
+  --modalvisibility: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 750px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  /* background: #17202a;
+  background: -moz-linear-gradient(top, #17202a 0%, #212f3d 49%, #566573 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #17202a 0%,
+    #212f3d 49%,
+    #566573 100%
+  );
+  background: linear-gradient(to bottom, #17202a 0%, #212f3d 49%, #566573 100%); */
+  background: #000000;
+  background: -moz-linear-gradient(top, #000000 0%, #151515 50%, #030034 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #000000 0%,
+    #151515 50%,
+    #030034 100%
+  );
+  background: linear-gradient(to bottom, #000000 0%, #151515 50%, #030034 100%);
+}
+
+@import url("https://use.typekit.net/kjo3cqn.css");
+
+.title {
+  font-size: 40px;
+  font-family: ethnocentric, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  /* background: linear-gradient(to bottom, #0d3d5c 0%, #23a5fb 50%, #ffffff 100%); */
+  background: linear-gradient(to bottom, #9a2e22 0%, #de4233 31%, #ffffff 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 0px 0px 20px #e60000;
+}
+
+.snakegame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+
+#gameScore {
+  font-size: 20px;
+  font-family: ethnocentric, sans-serif;
+  font-weight: 500;
+  color: white;
+  padding-inline: 2em;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.gameovertext {
+  font-size: 40px;
+  font-family: ethnocentric, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  background: linear-gradient(to bottom, #9a2e22 0%, #de4233 31%, #ffffff 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 0px 0px 20px #e60000;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+  /* position: absolute; */
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%x;
+  height: 100%;
+  overflow: auto;
+  display: var(--modalvisibility);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content p {
+  color: white;
+  font-size: 20px;
+  font-family: orbitron, sans-serif;
+
+  font-weight: 500;
+
+  font-style: normal;
+}
+
+.restartbutton {
+  color: black;
+  font-size: 20px;
+  font-family: orbitron, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: white;
+  padding-inline: 2em;
+  text-align: center;
+  border-radius: 20px;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: buttonani;
+}
+
+@keyframes buttonani {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.buttonrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: -1em;
+}
+
+.gamebuttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.restartbtn {
+  color: black;
+  font-size: 15px;
+  font-family: orbitron, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: white;
+  margin-inline: 1em;
+  border-radius: 10px;
+}
+
+.pausebtn {
+  color: black;
+  font-size: 15px;
+  font-family: orbitron, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: white;
+  margin-inline: 1em;
+  border-radius: 10px;
+}

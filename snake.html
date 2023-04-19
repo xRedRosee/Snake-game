@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.typekit.net/kjo3cqn.css">
+    <link rel="stylesheet" href="snake.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+</head>
+<body>
+    <div class="snakegame">
+        <h1 class="title"> SNAKE </h1>
+        <canvas id="gameCanvas" width="450" height="450"></canvas>
+        <div class="buttonrow">
+            <h2 id="gameScore"> Score: 0 </h2>
+            <span class="gamebuttons">
+                <button class="restartbtn"> RESTART </button>
+                <button class="pausebtn"> PAUSE </button>
+            </span>
+        </div>
+        <div id="Modal" class="modal">
+            <div class="modal-content">
+                <h1 class="gameovertext"> GAME OVER!</h1>
+                <p class="gameoverscore"> Your score: </p>
+                <p> Press ENTER or button to restart! </p>
+                <button class="restartbutton"> RESTART </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="snake.js"></script>
+</html>
